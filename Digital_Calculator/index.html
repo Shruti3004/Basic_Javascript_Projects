@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL CALCULATOR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
+    <style>
+        .alert{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <br><br>
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-uppercase text-center">calculator</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">    
+                <br>
+                <h5 class="message bg-danger text-center text-white py-2 alert">Enter the valid Values</h5>
+                <form>
+                    <div class="form-group ">
+                        <lable class="form-group">     
+                        </lable>
+                        <input type="text" class="form-control text-white bg-dark text-right input" disabled>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <table class="table-bordered table">
+                    <tbody>
+                        <tr>
+                            <td class="table-primary divide"><h4 class="text-center">/</h4></td>
+                            <td class="table-secondary decimal"><h3 class="text-center">.</h3></td>
+                            <td colspan="2" class="table-danger all-clear"><h4 class="text-center">AC</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="table-primary"><h3 class="text-center multiply">*</h3></td>
+                            <td class="table-warning"><h4 class="text-center number" data-num="7">7</h4></td>
+                            <td class="table-warning"><h4 class="text-center number" data-num="8">8</h4></td>
+                            <td class="table-warning"><h4 class="text-center number" data-num="9">9</h4></td>
+                        </tr>
+                 
+                        <tr>
+                            <td class="table-primary"><h3 class="text-center subtract">-</h3></td>
+                            <td class="table-warning"><h4 class="text-center number" data-num="4">4</h4></td>
+                            <td class="table-warning"><h4 class="text-center number" data-num="5">5</h4></td>
+                            <td class="table-warning"><h4 class="text-center number" data-num="6">6</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="table-primary plus"><h3 class="text-center" data-num="7">+</h3></td>
+                            <td class="table-warning"><h4 class="text-center number" data-num="1">1</h4></td>
+                            <td class="table-warning"><h4 class="text-center number" data-num="2">2</h4></td>
+                            <td class="table-warning"><h4 class="text-center number" data-num="3">3</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="table-success"><h3 class="text-center equal">=</h3></td>
+                            <td colspan="3" class="table-warning zero"><h4 class="text-center">0</h4></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
